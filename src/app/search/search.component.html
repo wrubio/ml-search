@@ -1,7 +1,7 @@
-<form action="">
+<form #searchForm>
   <div class="input-group search">
-    <input type="text" class="form-control" placeholder="Nunca dejes de buscar...">
-    <div class="input-group-append">
+    <input #itemSearch type="text" class="form-control" placeholder="Nunca dejes de buscar..." (keyup.enter)="onSearch(itemSearch)">
+    <div class="input-group-append" (click)="onSearch(itemSearch)">
       <span class="bg-gray-labels input-group-text">
         <img src="/assets/search/ic_Search.png" alt="search icon">
       </span>
