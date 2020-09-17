@@ -7,11 +7,15 @@ import { SharedModule } from './shared/shared.module';
 // components
 import { AppComponent } from './app.component';
 
+// Routing
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     SharedModule,
   ],
