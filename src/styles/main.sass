@@ -1,5 +1,5 @@
 @import '_colors.sass'
-
+/* Inpus general styles*/
 input
   color: $text-main
   font-size: 18px
@@ -21,12 +21,33 @@ input
 .bg-white
   background-color: $bg-white
 
+.bg-blue
+  background-color: $bg-blue
 
 /* Fonts general styles */
 .tc-hover
   color: $text-hover
 .tc-main
   color: $text-main
+
+.tw-100
+  font-weight: 100
+.tw-200
+  font-weight: 200
+.tw-300
+  font-weight: 300
+.tw-400
+  font-weight: 400
+.tw-500
+  font-weight: 500
+.tw-600
+  font-weight: 600
+.tw-700
+  font-weight: 700
+.tw-800
+  font-weight: 700
+.tw-900
+  font-weight: 900
 
 .ts-12
   font-size: .75rem
@@ -36,6 +57,10 @@ input
   font-size: 1.125rem
 .ts-24
   font-size: 1.5rem
+.ts-28
+  font-size: 1.75rem
+.ts-46
+  font-size: 2.875rem
 
 /* Image styles */
 .img-result
@@ -47,3 +72,36 @@ input
 .row
   &--width
     width: 103%
+
+@media only screen and (min-width : 1200px)
+  .container
+    max-width: 1280px
+
+/* Padding styles */
+.p-6
+  padding: 2rem
+.pt-6
+  padding-top: 2rem
+.pb-6
+  padding-bottom: 2rem
+.pl-6
+  padding-left: 2rem
+.pr-6
+  padding-right: 2rem
+
+/* Margin styles */
+.m-6
+  margin: 2rem
+.mt-6
+  margin-top: 2rem
+.mb-6
+  margin-bottom: 2rem
+.ml-6
+  margin-left: 2rem
+.mr-6
+  margin-right: 2rem
+
+/* BOX general styles */
+.container-box
+  background-color: $bg-white
+  border-radius: 4px
