@@ -2,12 +2,17 @@
 ## Proyecto desarrollado en angular
 Angular CLI version 10.1.1.
 
-### Setup
-Clonar repositorio e iniciar el servidor con
+## Setup
+### 1. Clonar repositorio 
+
+### 2. Instalar modulos con
+#### npm install
+
+### iniciar el servidor con
 #### npm run start
 
 ### Para correr pruebas
-npm run test
+#### npm run test
 
 ## Si tienes istalado Docker
 1. clonar repositorio
