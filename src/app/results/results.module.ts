@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 // Modules
 import { SharedModule } from '../shared/shared.module';
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 
 // Routing
 import { ResultsRoutingModule } from './results-routing.module';
@@ -16,6 +17,7 @@ import { ResultsComponent } from './results.component';
     CommonModule,
     ResultsRoutingModule,
     SharedModule,
+    NgxJsonLdModule,
   ]
 })
 export class ResultsModule { }
