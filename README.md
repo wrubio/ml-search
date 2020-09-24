@@ -8,10 +8,10 @@ Angular CLI version 10.1.1.
 ### 2. Instalar modulos con
 #### npm install
 
-### iniciar el servidor con
+### 3. iniciar el servidor con
 #### npm run start
 
-### Para correr pruebas
+### Nota: Para correr pruebas
 #### npm run test
 
 ## Si tienes istalado Docker
