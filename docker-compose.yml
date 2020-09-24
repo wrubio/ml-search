@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  angular:
+    build: .
+    depends_on:
+      - nodeapp
+    ports:
+      - "4200:4200"
+    volumes:
+      - "/app/node_modules"
+      - ".:/app"
+  nodeapp:
+      image: "wrubiorojas/mls-nodeapp"
+      ports:
+        - "3200:3200"
