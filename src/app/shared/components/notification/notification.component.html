@@ -1,0 +1,6 @@
+<div #notificationElement class="alert alert-dismissible fade hide hide-notification notification" role="alert" [ngClass]="'alert-' + notification.type">
+  {{ notification.text }}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

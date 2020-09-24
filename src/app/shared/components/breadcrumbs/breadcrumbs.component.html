@@ -1,0 +1,6 @@
+<div class="breadcrumbs pt-3 pb-3 tc-hover ts-14">
+  <ng-container *ngFor="let category of categories; index as i; count as l">
+    <span class="breadcrumbs__item" (click)="onCategory(category)">{{ category }}</span>
+    <span class="ml-1 mr-1" *ngIf="i < (l - 1)"> > </span>
+  </ng-container>
+</div>

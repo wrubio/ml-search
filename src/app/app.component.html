@@ -3,6 +3,12 @@
 </header>
 <main class="container-fluid">
   <div class="container">
-    <div class="row row--width align-items-center"></div>
+    <div class="row row--width align-items-center">
+      <div class="col-xl-10 offset-xl-1">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>
+  <app-notification></app-notification>
 </main>
+

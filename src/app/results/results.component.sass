@@ -1,0 +1,42 @@
+.result
+  &__item
+    cursor: pointer
+
+  &__inf-left
+    width: 806px
+    width: 100%
+    margin-bottom: 0
+
+    @media (min-width: '992px') and (max-width: '1279px')
+      min-width: 672px
+      margin-bottom: 0
+      width: auto
+    @media (min-width: '1280px')
+      min-width: 806px
+      margin-bottom: 0
+      width: auto
+
+  &__item-separator
+    border: 1px solid #EEEEEE
+
+  &__price
+    margin-bottom: 0
+
+    @media (min-width: '992px') and (max-width: '1279px')
+      margin-bottom: 16px
+    @media (min-width: '1280px')
+      margin-bottom: 16px
+    @media (max-width: '575px')
+      justify-content: center
+
+  &__city
+    padding-top: 16px
+
+    @media (min-width: '992px') and (max-width: '1279px')
+      padding-top: 34px
+    @media (min-width: '1280px')
+      padding-top: 34px
+
+  &__title, &__subtitle, &__img, &__city
+    @media (max-width: '575px')
+      text-align: center

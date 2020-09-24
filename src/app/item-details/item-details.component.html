@@ -1,0 +1,28 @@
+<app-loader *ngIf="isLoading"></app-loader>
+<ngx-json-ld [json]="schema"></ngx-json-ld>
+
+<div class="breadcrumbs" *ngIf="!isLoading && item">
+  <app-breadcrumbs></app-breadcrumbs>
+</div>
+
+<div class="item-details container-box tc-main p-6" *ngIf="!isLoading && item">
+  <div class="item-details__container d-lg-flex flex-lg-row justify-content-lg-start">
+    <div class="item-details__img mr-6">
+      <img [src]="item?.picture" alt="seleted item details" loading="lazy">
+    </div>
+    <div class="item-details__info d-lg-flex flex-lg-column">
+      <div class="item-details__info--sold mb-16 tw-400 ts-14 mb-3">{{ item?.condition }} - {{ item?.sold_quantity }} vendidos</div>
+      <div class="item-details__info--name mb-16 tw-600 ts-24 mb-6">{{ item?.title }}</div>
+      <div class="item-details__info--pice mb-16 tw-600 ts-38 mb-6">$ {{item?.price?.amount | currency : item?.price?.currency : '' : '.' + item?.price?.decimals : 'es' }}</div>
+      <div class="item-details__info--buy mb-16 tw-600">
+        <button type="button" class="btn btn-primary btn-block bg-blue">Comprar</button>
+      </div>
+    </div>
+  </div>
+  <div class="item-details__description">
+    <div class="item-details__description--title tw-300 ts-28 mb-6">Descripción del producto</div>
+    <div class="item-details__description--title tw-300 tc-hover">{{ item?.description }}</div>
+  </div>
+</div>
+
+<div class="item-details container-box tc-main p-6 mt-6" *ngIf="!isLoading && !item"><strong>Lo sentimos!</strong> No se encontró informació sobre el producto solicitado</div>
