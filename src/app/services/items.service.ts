@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ItemsService {
   private httpHeaders: any;
+  public serviceUrl = 'http://localhost:3200';
 
   constructor(
     private http: HttpClient
@@ -20,13 +21,13 @@ export class ItemsService {
   }
 
   public getItems(query: string): Observable<any> {
-    const url = `/api/items?q=${query}`;
+    const url = `${this.serviceUrl}/api/items?q=${query}`;
 
     return this.http.get(url, this.httpHeaders);
   }
 
   public getItemById(id: string): Observable<any> {
-    const url = `/api/items/${id}`;
+    const url = `${this.serviceUrl}/api/items/${id}`;
 
     return this.http.get(url, this.httpHeaders);
   }
